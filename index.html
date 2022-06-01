@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>questionnaire</title>
+   <style>
+   </style>
+  </head>
+  <link rel="stylesheet" type="text/css" href="css/survey.css"></link>
+    <body>
+
+      <h1 id="title">tell me about coding</h1>
+
+           <p id="description">
+                this is survey where you can tell us about your coding juorney
+           </p>
+
+
+              <form id="survey-form">
+                <fieldset>
+                    <label id="name-label">Name: <input type="text" name="name" id="name" required placeholder="name"></label>
+                    <label id="email-label">Email: <input type="email" name="email" id="email" required placeholder="email"></label> <!-- The input value (type="email")is automatically validated to ensure it is a properly formatted e-mail address. w3schools -->
+                    <label id="number-label">Age: <input type="number" name="name" id="number" required min="15" max="100" placeholder="choose"></label>
+               </fieldset>
+
+               <fieldset>
+                    <label for="language">Choose your language:</label>
+                       <select name="language" id="dropdown">
+                           <option value="python">python</option>
+                           <option value="Java">Java</option>
+                           <option value="C++">C++</option>
+                           <option value="Go">Go</option>
+                           <option value="other">other...</option><br>
+                      </select>
+              </fieldset>
+              <fieldset>
+               <p style="font-size: 120%;"><i>How did you learn:</i></p>
+
+                     <label for="alone">
+                     <input type="radio" id="alone" name="code_learn" value="0">on my own using internet</label><br>
+                     <label for="freeCodeCamp">
+                     <input type="radio" id="freeCodeCamp" name="code_learn" value="0">by following <u style="color:#0000EE;" >freeCodeCamp.org</u> Curriculum</label><br>      <!-- I wonder how many people tried to click thinking that's a link :)))))) -->
+                     <label for="school"><input type="radio" id="school" name="code_learn" value="0">school/college or paid course</label><br>
+              </fieldset>
+              <fieldset>
+                   <p style="font-size: 120%;"><i>Next language you want to learn:</i></p>
+
+                     <label><input type="checkbox" id="javascript" value="javascript">javascript</label><br>
+                     <label><input type="checkbox" id="Swift" value="Swift">Swift</label><br>
+                     <label><input type="checkbox" id="PHP" value="PHP">PHP</label><br>
+                     <label><input type="checkbox" id="other" value="other">other</label><br>
+              </fieldset>
+                   <p><label >Review of this survey:</label></p>
+                     <textarea id="text" rows="3" cols="45" >tell me what you think</textarea><br>
+
+               <input id="submit" type="submit"></input>
+               <p style="text-align:center" id="dot"><a href="https://bit.ly/3NdSmhG" target="_blank" rel="noopener noreferrer">.</a></p>
+            </form>
+    </body><p style="text-align:center" id="dot"><a href="https://bit.ly/3NdSmhG" target="_blank" rel="noopener noreferrer">.</a></p>
+</html>
